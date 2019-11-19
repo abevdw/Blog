@@ -1,0 +1,10 @@
+<?php
+
+$this->headTitle('Inloggen');
+
+echo "<b>" . $error . "</b>";
+echo '<br /><br />';
+
+$form = $this->form;
+$form->prepare();
+echo $this->form($form);
