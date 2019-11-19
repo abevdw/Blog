@@ -1,0 +1,30 @@
+<?php
+$this->headTitle('Edit');
+
+//$pdo = ?
+
+if(isset($_POST['Edit']))
+{
+    $Description = $_POST['text'];
+
+    //  $parameters = array(':Description'=>$Description );
+    //  $sth = $pdo->prepare('UPDATE test SET Description=:Description');
+    //  $sth->execute($parameters);
+
+    //  $parameters = array(':Status'=>'Verwacht');
+    //  $sth2 = $pdo->prepare('select * from films where Status = :Status');
+
+    //  sth2->execute($parameters);
+    //  $row = $sth2->fetch();
+    //  echo $row['Description'];
+
+    echo 'Het stukje tekst is aangepast in de database en is nu dit: <br><br>';
+    echo '<b>' . $Description . '</b>';
+
+}
+
+else
+{
+    $form = $this->form;
+    echo $this->form($form);
+}
