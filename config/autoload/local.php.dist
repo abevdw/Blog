@@ -11,7 +11,7 @@ declare(strict_types=1);
 return [
     'authentication' => [
             'pdo' => [
-                'dsn' => 'mysql:host=localhost;dbname=blog;user=Abe;password=KaasIsAwesome',
+                'dsn' => 'mysql:host=localhost;dbname=blog;user=Abe;password=xxxx',
                     'table' => 'users',
                     'field' => [
                         'identity' => 'username',
