@@ -13,7 +13,7 @@ return [
         'pdo' => [
             'dsn' => 'mysql:host=localhost;dbname=test',
               'username' => 'Abe',
-              'password' => 'KaasIsAwesome',
+              'password' => 'xxxx',
             'table' => 'users',
             'field' => [
                 'identity' => 'username',
