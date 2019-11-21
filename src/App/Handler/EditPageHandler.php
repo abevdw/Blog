@@ -29,7 +29,8 @@ class EditPageHandler implements MiddlewareInterface
 
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
-            $session = $request->getAttribute(SessionMiddleware::SESSION_ATTRIBUTE);
+    
+    //     $session = $request->getAttribute(SessionMiddleware::SESSION_ATTRIBUTE);
 
     //  if ($session->has(UserInterface::class))
     //  {
