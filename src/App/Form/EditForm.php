@@ -21,7 +21,7 @@ class EditForm extends Form implements InputFilterProviderInterface
             'type'    => Text::class,
             'name'    => 'text',
             'options' => [
-                'label' => 'Tekst ',
+                'label' => 'Text ',
             ],
         ]);
 
