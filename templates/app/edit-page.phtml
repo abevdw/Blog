@@ -1,0 +1,15 @@
+<?php
+$this->headTitle('Edit');
+
+    if (isset($_POST['Edit']) && !empty($_POST['text']))
+    {
+        echo "The text has been added to the database: <br> <i>" . $text . "</i>";
+    }
+
+    else
+    {
+        echo "Wat het nu is: <br> <i>" . $description . " </i> ";
+        echo '<br /><br />';
+        echo $this->form($form);
+    }
+//}
