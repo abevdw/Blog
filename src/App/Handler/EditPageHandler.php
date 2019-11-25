@@ -36,7 +36,7 @@ class EditPageHandler implements MiddlewareInterface
 
       if ($session->has(UserInterface::class))
       {
-            $pdo = new PDO('mysql:host=localhost;dbname=test;username=Abe;password=KaasIsAwesome');
+            $pdo = new PDO('mysql:host=localhost;dbname=test;username=Abe;password=xxxx');
 
             $parameters = array('');
             $sth = $pdo->prepare('select * from edit');
