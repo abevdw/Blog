@@ -44,7 +44,7 @@ return function (Application $app, MiddlewareFactory $factory, ContainerInterfac
 
     $app->get('/blog2/public/api/ping', App\Handler\PingHandler::class, 'api.ping');
 
-    $app->route('/blog2/public/edit', [ App\Handler\EditPageHandler::class, AuthenticationMiddleware::class, ], ['GET', 'POST'],'edit');
+    $app->route('/blog2/public/edit', [ App\Handler\EditPageHandler::class, ], ['GET', 'POST'],'edit');
 
     $app->route('/blog2/public/login', [ App\Handler\LoginPageHandler::class, AuthenticationMiddleware::class, ], ['GET', 'POST'],'loginRenderer');
 
