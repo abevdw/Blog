@@ -32,12 +32,12 @@ class EditPageHandler implements MiddlewareInterface
 
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
-//        $session = $request->getAttribute(SessionMiddleware::SESSION_ATTRIBUTE);
-//        if ($session->has(UserInterface::class))
-//        {
-            $servername = "192.168.198.8";
+        $session = $request->getAttribute(SessionMiddleware::SESSION_ATTRIBUTE);
+        if ($session->has(UserInterface::class))
+        {
+            $servername = "ip adress or localhost";
             $username = "Abe";
-            $password = "KaasIsAwesome";
+            $password = "xxxx";
             $pdo = new PDO("mysql:host=$servername;port=3306;dbname=test;", $username, $password);
 
             $parameters = array('');
@@ -69,11 +69,11 @@ class EditPageHandler implements MiddlewareInterface
                     }
                 }
             }
-//        }
-//        else
-//        {
-//          return new RedirectResponse('/blog2/public/login');
-//        }
+        }
+        else
+        {
+          return new RedirectResponse('/blog2/public/login');
+        }
 
         return new HtmlResponse(
             $this->template->render('app::edit-page', [
