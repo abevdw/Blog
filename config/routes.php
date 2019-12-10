@@ -40,7 +40,7 @@ return function (Application $app, MiddlewareFactory $factory, ContainerInterfac
 
     $app->get('/blog2/public/', App\Handler\HomePageHandler::class, 'home');
 
-    //  $app->route('/blog2/public/', [ AuthenticationMiddleware::class, App\Handler\HomePageHandler::class, ], ['GET'], 'home');
+    //    $app->get('/blog2/public/', [ AuthenticationMiddleware::class, App\Handler\HomePageHandler::class, ],'home');
 
     $app->get('/blog2/public/api/ping', App\Handler\PingHandler::class, 'api.ping');
 
