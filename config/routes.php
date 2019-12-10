@@ -48,7 +48,4 @@ return function (Application $app, MiddlewareFactory $factory, ContainerInterfac
 
     $app->route('/blog2/public/login', [ App\Handler\LoginPageHandler::class, AuthenticationMiddleware::class, ], ['GET', 'POST'],'loginRenderer');
 
-    //  NOTE(Chris Kruining) Login routes
-    //  $app->get('/blog2/public/login', App\Handler\LoginPageHandler::class,  'loginRenderer');
-    //  $app->post('/blog2/public/login', App\Handler\LoginPageHandler::class, 'loginHandler');
 };
